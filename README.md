@@ -12,9 +12,9 @@ This library allows you to make the ESP32 act as a Bluetooth Gamepad and control
  - [x] Report optional battery level to host (basically works, but it doesn't show up in Android's status bar)
  - [x] Customize Bluetooth device name/manufacturer
  - [x] Compatible with Windows
- - [ ] Compatible with Android (Untested)
+ - [x] Compatible with Android
  - [ ] Compatible with Linux (Untested)
- - [ ] Compatible with MacOS X (Untested)
+ - [x] Compatible with MacOS
  - [ ] Compatible with iOS (Untested)
 
 ## Installation
@@ -28,19 +28,19 @@ This library allows you to make the ESP32 act as a Bluetooth Gamepad and control
 ``` C++
 /*
  * This example turns the ESP32 into a Bluetooth LE gamepad that presses buttons and moves axis
- * 
+ *
  * Possible buttons are:
- * BUTTON_1 through to BUTTON_14* 
- * 
- * Possible DPAD/HAT switch position values are: 
- * DPAD_CENTERED, DPAD_UP, DPAD_UP_RIGHT, DPAD_RIGHT, DPAD_DOWN_RIGHT, 
+ * BUTTON_1 through to BUTTON_14*
+ *
+ * Possible DPAD/HAT switch position values are:
+ * DPAD_CENTERED, DPAD_UP, DPAD_UP_RIGHT, DPAD_RIGHT, DPAD_DOWN_RIGHT,
  * DPAD_DOWN, DPAD_DOWN_LEFT, DPAD_LEFT, DPAD_UP_LEFT
- * 
- * bleGamepad.setAxes takes the following signed char parameters: 
+ *
+ * bleGamepad.setAxes takes the following signed char parameters:
  * (Left Thumb X, Left Thumb Y, Right Thumb X, Right Thumb Y, Left Trigger, Right Trigger, Hat switch position);
  */
- 
-#include <BleGamepad.h> 
+
+#include <BleGamepad.h>
 
 BleGamepad bleGamepad;
 
